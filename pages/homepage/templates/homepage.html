@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block page_css %}
+    <link rel="stylesheet" href="{{ url_for('homepage.static', filename='css/homepage.css') }}"/>
+{% endblock %}
+
+{% set page_head_title = 'Homepage' %}
+
+
+{% block page_body_main %}
+    <h2 class="TODO">TODO: Home Page</h2>
+    {#        <video controls>#}
+    {#            <source src="../static/media/Presentation1.webm" type="video/webm"/>#}
+    {#        </video>#}
+    <iframe  width="50%" height="100%"  src="https://www.youtube.com/embed/gBi8Obib0tw" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+{% endblock %}
